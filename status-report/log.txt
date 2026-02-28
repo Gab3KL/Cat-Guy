@@ -1,0 +1,8 @@
+[23:53:43] Comando: !play | Música: Work Hard Play Hard (HARDSTYLE)
+[00:00:33] Comando: !play | Música: Play
+[00:00:35] Tocando agora: Play
+[00:04:04] Comando: !play | Música: Lady Gaga - Alejandro (Tape B Flip)
+[00:04:05] Tocando agora: Lady Gaga - Alejandro (Tape B Flip)
+[00:17:06] Adicionado: Lady Gaga - Alejandro (Tape B Flip)
+[00:17:06] Tocando agora: Lady Gaga - Alejandro (Tape B Flip)
+[00:17:24] Adicionado: Bad Romance - Lady Gaga (slowed + reverse)   David Laid Motivational\_1727909563087.mp3

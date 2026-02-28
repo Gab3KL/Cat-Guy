@@ -1,0 +1,12 @@
+name: Stoat Update
+on: [push]
+
+jobs:
+  stoat_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Run Stoat
+        uses: stoat-dev/stoat-action@v0
