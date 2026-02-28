@@ -3,6 +3,8 @@ const { Player } = require('discord-player');
 const { DefaultExtractors } = require('@discord-player/extractor');
 const play = require('play-dl');
 
+require('dotenv').config();
+
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
@@ -13,9 +15,9 @@ const client = new Client({
 });
 
 // --- COLOQUE SUAS CHAVES AQUI (IGUAL ANTES) ---
-const SPOTIFY_ID = 'a6c2cf753fda460ebe0b3799011a6da8'; 
-const SPOTIFY_SECRET = '43158da780d64d879837095847714331';
-const DISCORD_TOKEN = 'MTQ3NzExMjA2Mzc0OTkxODg0Mg.GaXhQu.p4k4OnBqEoflZ4WXVqlJJLURrb1KUztnF37Mn8';
+const SPOTIFY_ID = process.env.SPOTIFY_ID;
+const SPOTIFY_SECRET = process.env.SPOTIFY_SECRET;
+const DISCORD_TOKEN = process.env.DISCORD_TOKEN;
 // ----------------------------------------------
 
 play.setToken({
@@ -25,7 +27,8 @@ play.setToken({
         market: 'BR'
     },
     youtube: {
-        cookie: "COLE_SEUS_COOKIES_AQUI" // Isso ajuda a evitar o bloqueio de links
+        // O 'fs.readFileSync' vai ler o conteúdo do arquivo txt para o bot usar
+        cookie: fs.readFileSync('./www.youtube.com_cookies.txt', 'utf8') 
     }
 });
 
