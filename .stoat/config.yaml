@@ -1,5 +1,6 @@
 version: 1
 enabled: true
 tasks:
-  - name: music-logs
-    entrypoint: status-report/log.txt
+  music-logs:
+    format: markdown
+    file_path: status-report/log.txt
