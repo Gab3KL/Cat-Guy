@@ -1,5 +1,5 @@
+version: 1
 enabled: true
-plugins:
-  static_hosting:
-    bot-status:
-      path: ./status-report/ # Pasta onde o bot vai gerar logs
+tasks:
+  - name: music-logs
+    entrypoint: status-report/log.txt
