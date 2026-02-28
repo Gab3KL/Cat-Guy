@@ -3,4 +3,4 @@ enabled: true
 tasks:
   music-logs:
     format: markdown
-    file_path: status-report/log.txt 
+    file_path: test.txt
